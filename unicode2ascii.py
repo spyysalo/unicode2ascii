@@ -116,8 +116,15 @@ def main(argv):
 
     # read in mapping
     try:
-        with codecs.open(MAPPING_FILE_NAME, encoding="utf-8") as f:
-            mapping = read_mapping(f, MAPPING_FILE_NAME)
+        mapfn = MAPPING_FILE_NAME
+
+        if not os.path.exists(mapfn):
+            # fall back to trying in script dir
+            mapfn = os.path.join(os.path.dirname(__file__), 
+                                 os.path.basename(MAPPING_FILE_NAME))
+
+        with codecs.open(mapfn, encoding="utf-8") as f:
+            mapping = read_mapping(f, mapfn)
     except IOError, e:
         print >> sys.stderr, "Error reading mapping from %s: %s" % (MAPPING_FILE_NAME, e)
         return 1
