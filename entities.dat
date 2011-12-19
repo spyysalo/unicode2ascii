@@ -333,18 +333,30 @@
 25CB	o
 25A1	square
 25AD	rectangle
-25B2	triangle
-#25B3	big up tri, open
-25B3	triangle
-#25B4	black triangle
-25B4	triangle
-25B5	triangle
-25BF	triangle down
+# 25B2-25C5: various empty and filled triangles; use approximate shapes
+25B2	^
+25B3	^
+25B4	^
+25B5	^
+25B6	>
+25B7	>
+25B8	>
+25B9	>
+25BA	>
+25BB	>
+25BC	v
+25BD	v
+25BE	v
+25BF	v
+25C0	<
+25C1	<
+25C2	<
+25C3	<
+25C4	<
+25C5	<
 22C6	small star, filled
 2022	*
 25AA	*
-25C2	black triangle left
-25B8	black triangle right
 2663	club suit symbol
 2666	diamond
 2661	heart
@@ -368,8 +380,6 @@
 22EE	...
 2043	rectangle
 25CA	lozenge
-25C3	triangle left
-25B9	triangle right
 2605	bigstar
 266E	music natural
 2736	sextile
@@ -1172,7 +1182,6 @@
 228E	plus sign in union
 2240	wreath product
 25EF	large circle
-25BD	big dn tri, open
 221F	90 degree angle
 2221	measured angle
 2035	'
