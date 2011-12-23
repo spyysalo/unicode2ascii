@@ -262,8 +262,6 @@
 2013	-
 2010	-
 2423	 
-2026	...
-2025	..
 # 2150-218F: Number Forms
 # Mapping for range originally generated in part using NLM LVG toAscii.
 # Difference: toAscii doesn't wrap fractions in parens.
@@ -330,9 +328,6 @@
 2592	50% shaded block
 2593	75% shaded block
 25AE	histogram marker
-25CB	o
-25A1	square
-25AD	rectangle
 # 25B2-25C5: various empty and filled triangles; use approximate shapes
 25B2	^
 25B3	^
@@ -354,16 +349,38 @@
 25C3	<
 25C4	<
 25C5	<
-22C6	small star, filled
-2022	*
+# 25C6-25C8: Geometric shapes, diamonds
+25C6	*
+25C7	*
+25C8	*
+# 25C9-: Geometric shapes, misc.
+25C9	o
+25CA	*
+25CB	o
+25CC	o
+25CD	o
+25CE	o
+25CF	*
 25AA	*
 2663	club suit symbol
 2666	diamond
 2661	heart
 2660	spades
 2720	maltese cross
-2020	dagger
-2021	double dagger
+# 2020, 2021: dagger and double dagger; approximations
+2020	+
+2021	++
+# 2022-: General Punctuation
+2022	*
+2023	*
+2024	.
+2025	..
+2026	...
+2027	.
+# 2028	<LINE SEPARATOR>
+2028	\n
+# 2029	<PARAGRAPH SEPARATOR>
+2029	\n
 2713	check mark
 2717	ballot cross
 266F	musical sharp
@@ -371,15 +388,26 @@
 2642	male symbol
 2640	female symbol
 260E	telephone symbol
-2041	insertion mark
+# 2041	<CARET INSERTION POINT>
+2042	***
+2043	-
+2044	/
+2045	[
+2046	]
+2047	??
+2048	?!
+2049	!?
+# 204A	<TIRONIAN SIGN ET>
+# 204B	<REVERSED PILCROW SIGN>
+204C	-
+204D	-
+204E	*
+204F	;
 201A	'
 201E	"
-2026	...
 201D	"
 2019	'
 22EE	...
-2043	rectangle
-25CA	lozenge
 2605	bigstar
 266E	music natural
 2736	sextile
@@ -413,13 +441,13 @@
 2135	aleph
 221F	90 degree angle
 2222	angle-spherical
+2245	=~
 2248	=~
 2235	because
 #22A4	inverted perpendicular
 22A4	T
 #22A5	perpendicular
 22A5	_|_
-2245	congruent with
 222E	integral
 2261	=
 2262	!=
@@ -507,7 +535,23 @@
 21D2	-->
 223C	~
 2243	~
-25A1	square
+# 25A0-25AB: Geometric Shapes, squares
+25A0	*
+25A1	*
+25A2	*
+25A3	*
+25A4	*
+25A5	*
+25A6	*
+25A7	*
+25A8	*
+25A9	*
+25AA	*
+25AB	*
+25A1	*
+# 25AC-: Geometric Shapes, rectangles
+25AC	-
+25AD	-
 2282	subset
 2286	subset/equals
 2283	superset
@@ -668,8 +712,10 @@
 00B0	degrees
 00BA	masculine
 00AA	feminine
-00A7	section sign
-00B6	paragraph sign
+# 00A7: section sign ("double S")
+00A7	S
+# 00B6:	paragraph sign
+00B6	$
 00B7	.
 2190	<--
 #2191	upward arrow
@@ -1164,20 +1210,21 @@
 22BC	logical and, bar above
 22D2	dbl intersection
 22D3	dbl union
-22CE	curly logical or
-22CF	curly logical and
-22C4	open diamond
-22C7	division on times
+# 22C4	<DIAMOND OPERATOR>
+22C5	.
+22C6	*
+22C7	*
+# 22C8	<BOWTIE>
+# 22CB	<LEFT SEMIDIRECT PRODUCT>
+# 22CC	<RIGHT SEMIDIRECT PRODUCT>
+22CD	=~
+# 22CE	<CURLY LOGICAL OR>
+# 22CF	<CURLY LOGICAL AND>
 22BA	intercal
-22CB	leftthreetimes
-22C9	times sign, left closed
-22CC	rightthreetimes
-22CA	times sign, right closed
 00B7	.
 22A1	small dot in box
 2293	intersection
 2294	union
-22C6	small star, filled
 22A0	multiply sign in box
 228E	plus sign in union
 2240	wreath product
@@ -1452,7 +1499,6 @@ FB03	ffi
 FB04	ffl
 2011	-
 2061	 
-22C5	.
 22EF	...
 22F0	...
 22F1	...
