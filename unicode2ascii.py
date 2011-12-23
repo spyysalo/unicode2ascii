@@ -48,6 +48,11 @@ def read_mapping(f, fn="mapping data"):
 
         c = unichr(int(c, 16))
         assert c not in mapping or mapping[c] == r, "ERROR: conflicting mappings for %.4X: '%s' and '%s'" % (ord(c), mapping[c], r)
+
+        # exception: literal '\n' maps to newline
+        if r == '\\n':
+            r = '\n'
+
         mapping[c] = r
 
     return mapping
