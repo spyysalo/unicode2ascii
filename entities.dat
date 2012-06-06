@@ -1867,6 +1867,7 @@
 2534	_|_
 253C	+
 # ...
+2550	=
 2551	||
 # 2580-259F: Block Elements (rough approximations)
 2580	"
@@ -2226,6 +2227,11 @@
 2087	7
 2088	8
 2089	9
+208A	+
+208B	-
+208C	=
+208D	(
+208E	)
 # ...
 22EE	...
 22EF	...
@@ -2282,6 +2288,24 @@ FEFF
 # ...
 FF0C	,
 FF0D	-
+# FF00-FFEF: Halfwidth and Fullwidth Forms
+# ...
+FF10	0
+FF11	1
+FF12	2
+FF13	3
+FF14	4
+FF15	5
+FF16	6
+FF17	7
+FF18	8
+FF19	9
+FF1A	:
+FF1B	;
+FF1C	<
+FF1D	=
+FF1E	>
+FF1F	?
 # 1D400-1D7FF: Mathematical Alphanumeric Symbols
 # Mapping for range originally generated using uni2ascii.
 # 1D6A6- cut due to lack of uni2ascii mapping.
