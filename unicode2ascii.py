@@ -137,6 +137,8 @@ def main(argv):
     # primary processing
     for fn in options.file:
         try:
+            if fn == '-':
+                fn = '/dev/stdin' # TODO: make portable
             with codecs.open(fn, encoding="utf-8") as f:
                 if options.directory is None:
                     process(f, sys.stdout, mapping)
