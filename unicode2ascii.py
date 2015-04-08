@@ -22,6 +22,15 @@ MAPPING_FILE_NAME = "entities.dat"
 map_count = {}
 missing_mapping = {}
 
+
+# Support wide unichr on narrow python builds. From @marcovzla, see
+# https://github.com/spyysalo/nxml2txt/pull/4.
+def wide_unichr(i):
+    try:
+        return unichr(i)
+    except ValueError:
+        return (r'\U' + hex(i)[2:].zfill(8)).decode('unicode-escape')
+
 def read_mapping(f, fn="mapping data"):
     """
     Reads in mapping from Unicode to ASCII from the given input stream
@@ -46,7 +55,7 @@ def read_mapping(f, fn="mapping data"):
         assert m, "Format error in %s line %s: '%s'" % (fn, i+1, l.replace("\n","").encode("utf-8"))
         c, r = m.groups()
 
-        c = unichr(int(c, 16))
+        c = wide_unichr(int(c, 16))
         assert c not in mapping or mapping[c] == r, "ERROR: conflicting mappings for %.4X: '%s' and '%s'" % (ord(c), mapping[c], r)
 
         # exception: literal '\n' maps to newline
