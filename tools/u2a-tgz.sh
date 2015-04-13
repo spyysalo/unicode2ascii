@@ -36,7 +36,7 @@ for f in "$@"; do
 	    mkdir -p "$o"
 	fi
 	# convert all files in the directory
-	find "$d" -type f -d 1 | xargs python "$SCRIPTDIR/unicode2ascii.py" -d "$o"
+	find "$d" -type f -d 1 | xargs python "$SCRIPTDIR/../unicode2ascii.py" -d "$o"
     done
     echo "done." >&2
 	
