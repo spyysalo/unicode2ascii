@@ -566,6 +566,8 @@
 # 0283	<LATIN SMALL LETTER ESH>
 0283	esh
 # ...
+028A	upsilon
+# ...
 # 02B0-02FF: Spacing Modifier Letters
 02B0	h
 02B1	h
@@ -1033,6 +1035,11 @@
 # 046E	<CYRILLIC CAPITAL LETTER KSI>
 # 046F	<CYRILLIC SMALL LETTER KSI>
 # 0470-04FF TODO
+0472	fita
+# ...
+04D3	a
+04E7	o
+# ...
 049B	k
 # ...
 # 04B0	<CYRILLIC CAPITAL LETTER STRAIGHT U WITH STROKE> (rough approx.)
@@ -1045,6 +1052,12 @@
 05F3	'
 # 05F3 <HEBREW PUNCTUATION GERSHAYIM>
 05F4	"
+# ...
+066D	*
+# ...
+# 115F <HANGUL CHOSEONG FILLER>
+115F	 
+1D27	lamda
 # ...
 # 1D52 <MODIFIER LETTER SMALL O>
 1D52	o
@@ -1879,6 +1892,7 @@
 21D3	v
 21D4	<=>
 # ...
+21E2	->
 21E6	<=
 21E7	^
 21E8	=>
@@ -1933,6 +1947,8 @@
 25EF	O
 25FB	[]
 25FC	*
+25FD	[]
+25FE	*
 # ...
 25A0	*
 25A1	*
@@ -2202,6 +2218,26 @@
 2755	!
 2756	*
 2757	!
+2780	(1)
+2781	(2)
+2782	(3)
+2783	(4)
+2784	(5)
+2785	(6)
+2786	(7)
+2787	(8)
+2788	(9)
+2789	(10)
+278A	(1)
+278B	(2)
+278C	(3)
+278D	(4)
+278E	(5)
+278F	(6)
+2790	(7)
+2791	(8)
+2792	(9)
+2793	(10)
 2794	->
 27A0	->
 27A1	->
@@ -2314,6 +2350,8 @@
 260D	*
 # ...
 2610	[]
+2611	[v]
+2612	[x]
 # ...
 2640	female
 2642	male
@@ -2341,6 +2379,10 @@ FB04	ffl
 FE37	{
 # FE38	<PRESENTATION FORM FOR VERTICAL RIGHT CURLY BRACKET>
 FE38	}
+# ...
+FE5F	#
+# ...
+FE61	*
 # ...
 FEFF	 
 # ...
