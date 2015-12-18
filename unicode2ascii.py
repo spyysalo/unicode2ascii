@@ -74,17 +74,18 @@ def process(f, out, mapping):
     """
     global map_count, missing_mapping
 
-    for c in f.read():
-        if ord(c) >= 128:
-            # higher than 7-bit ASCII, might wish to map
-            if c in mapping:
-                map_count[c] = map_count.get(c,0)+1
-                c = mapping[c]
-            else:
-                missing_mapping[c] = missing_mapping.get(c,0)+1
-                # escape into numeric Unicode codepoint
-                c = "<%.4X>" % ord(c)
-        out.write(c.encode("utf-8"))
+    for line in f:
+        for c in line:
+            if ord(c) >= 128:
+                # higher than 7-bit ASCII, might wish to map
+                if c in mapping:
+                    map_count[c] = map_count.get(c,0)+1
+                    c = mapping[c]
+                else:
+                    missing_mapping[c] = missing_mapping.get(c,0)+1
+                    # escape into numeric Unicode codepoint
+                    c = "<%.4X>" % ord(c)
+            out.write(c.encode("utf-8"))
 
 def print_summary(out, mapping):
     """
